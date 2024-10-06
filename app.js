@@ -21,7 +21,7 @@ const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 // CORS configuration
 app.use(cors({
-    origin: 'http://65.0.32.93', // Replace with the domain of your frontend
+    origin: 'http://13.200.229.146', // Replace with the domain of your frontend
     methods: ['GET', 'POST'], // Allow only specific HTTP methods
     credentials: true, // Allow credentials like cookies, sessions, etc.
     optionsSuccessStatus: 200 // For legacy browser support
