@@ -7,7 +7,7 @@ async function submitQuestion(event) {
 
     try {
         // Send a POST request to the server with the form data
-        const response = await fetch("http://3.7.253.128:8080/submitQuestion", {
+        const response = await fetch("http://13.233.156.4:8080/submitQuestion", {
             method: "POST",
             body: formData
         });
@@ -28,7 +28,7 @@ async function submitQuestion(event) {
 async function fetchQuestions() {
     try {
         // Send a GET request to the server to fetch recent questions
-        const response = await fetch("http://3.7.253.128:8080/getQuestions");
+        const response = await fetch("http://13.233.156.4:8080/getQuestions");
         const data = await response.json(); // Parse the response as JSON
 
         // Update the questions-container with the fetched questions
