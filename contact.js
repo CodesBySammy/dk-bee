@@ -19,7 +19,7 @@ angular.module('contactApp', [])
             $http({
                 method: 'POST',
                 // Updated URL to the EC2 instance public IP and port
-                url: 'http://3.7.253.128:8080/submitQuery', 
+                url: 'http://13.233.156.4:8080/submitQuery', 
                 data: self.formData
             })
             .then(function(response) {
